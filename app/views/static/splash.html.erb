@@ -63,6 +63,13 @@
 </div>
 
 <div id="wrapper">
+    
+    <% if flash[:notice]  -%>
+      <div style="color: red; background-color: grey;">
+        <%= flash[:notice]  %>
+      </div>
+    <% end -%>
+    
     <div id="content">
 	
 		
