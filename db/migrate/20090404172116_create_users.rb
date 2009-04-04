@@ -12,6 +12,8 @@ class CreateUsers < ActiveRecord::Migration
       t.string   "activation_code"
       t.datetime "deleted_at"
       t.datetime "activated_at"
+      t.column :remember_token,            :string, :limit => 40
+      t.column :remember_token_expires_at, :datetime
       t.timestamps
     end
   end

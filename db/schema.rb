@@ -9,7 +9,27 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090404032505) do
+ActiveRecord::Schema.define(:version => 20090404172116) do
+
+  create_table "debtors", :force => true do |t|
+    t.string   "email"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "phone"
+    t.string   "office_phone"
+    t.string   "cell_phone"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "debts", :force => true do |t|
+    t.float    "amount"
+    t.integer  "debtor_id"
+    t.integer  "user_id"
+    t.integer  "frequency_in_days"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email"
@@ -18,11 +38,13 @@ ActiveRecord::Schema.define(:version => 20090404032505) do
     t.string   "phone"
     t.string   "salt"
     t.string   "crypted_password"
-    t.boolean  "accept_tou",       :default => false
-    t.integer  "login_count",      :default => 1
+    t.boolean  "accept_tou",                              :default => false
+    t.integer  "login_count",                             :default => 1
     t.string   "activation_code"
     t.datetime "deleted_at"
     t.datetime "activated_at"
+    t.string   "remember_token",            :limit => 40
+    t.datetime "remember_token_expires_at"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
