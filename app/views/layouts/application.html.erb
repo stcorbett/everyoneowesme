@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Everyone Owes Me  </title>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.everyoneowesme.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.everyoneowesme.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 2.6.5" />
+
+         <script type="text/javascript" src="http://www.everyoneowesme.com/wp-content/plugins/quick-sms/quick-sms.js" ></script>
+      <script src="http://www.everyoneowesme.com/wp-content/themes/spotonseo-red/tabs.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript" charset="utf-8">
+
+      $(function () {
+         var tabContainers = $('div.tabs > div');
+         tabContainers.hide().filter(':first').show();
+
+         $('div.tabs ul.tabNavigation a').click(function () {
+            tabContainers.hide();
+            tabContainers.filter(this.hash).show();
+            $('div.tabs ul.tabNavigation a').removeClass('selected');
+            $(this).addClass('selected');
+            return false;
+         }).filter(':first').click();
+      });
+
+   </script>
+<link rel="stylesheet" href="http://www.everyoneowesme.com/wp-content/themes/spotonseo-red/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Everyone Owes Me RSS Feed" href="http://www.everyoneowesme.com/?feed=rss2" />
+<link rel="pingback" href="http://www.everyoneowesme.com/xmlrpc.php" />
+
+</head>
+<body>
+<div id="header-outer">
+    <div id="header">
+        <div class="left">
+            <h3 class="logo"><a href="http://www.everyoneowesme.com/" title="Everyone Owes Me"><img src="http://www.everyoneowesme.com/wp-includes/images/everyoneowesme.png"></a></h3>
+<div class="description">Because there is nothing worse than people owing you money.</div>
+
+        </div>
+        <div class="right">
+            <a class="subscribe" href="http://www.everyoneowesme.com/?feed=rss2" title="Subscribe">Subscribe</a>
+        </div>
+        <div class="clr"></div>
+            <form method="get" id="search" action="http://www.everyoneowesme.com/">
+                <div><input type="text" value="" name="s" class="txt" />
+                    <input type="image" src="http://www.everyoneowesme.com/wp-content/themes/spotonseo-red/images/search.gif" />
+
+                </div>
+                <div class="clr"></div>
+            </form>
+            <ul class="nav">
+                <li class="current_page_item"><a href="http://www.everyoneowesme.com/" title="Everyone Owes Me">Home</a></li>
+            <li class="page_item page-item-2"><a href="http://www.everyoneowesme.com/?page_id=2" title="About">About</a></li>
+<li class="page_item page-item-3"><a href="http://www.everyoneowesme.com/?page_id=3" title="SMS Test">SMS Test</a></li>
+            </ul>
+
+        </div>
+        <div class="clr"></div>
+</div>
+
+<div id="wrapper">
+    
+    <% if flash[:notice]  -%>
+      <div style="color: red; background-color: grey; margin: 5px;">
+        <div style="padding: 5px;">
+          <%= flash[:notice]  %>
+        </div>
+      </div>
+    <% end -%>
+    
+    <div id="content">
+      <%= yield %>
+    </div>
+    
+    <div id="rsidebar">
+        <div class="sidebar"><ul>
+
+    
+    </ul>
+</div>
+        <div class="tabs">
+                <ul class="tabNavigation">
+                    <li><a href="#first" title="">Category</a></li>
+                    <li><a href="#third" title="">Comments</a></li>
+                    <li><a href="#tags" title="">Tags</a></li>
+                </ul>
+
+                <div id="first">
+                    <ul>   <li class="cat-item cat-item-1"><a href="http://www.everyoneowesme.com/?cat=1" title="View all posts filed under Uncategorized">Uncategorized</a> (2)
+</li>
+</ul>
+                </div>
+                <div id="second">
+                                        <p><a href="http://wordpress.org/extend/plugins/wp-postratings/" title="plugin">This Requires "Post Rating" plugin</a></p>                </div>
+
+                <div id="third">&nbsp;
+                    <p><a href="http://wordpress.org/extend/plugins/get-recent-comments/" title="plugin">This Requires "Recent Comments" plugin</a></p>                </div>
+                <div id="tags">
+                                    </div>
+        </div>
+        <div class="clr"></div>
+        <div class="sidebar2"><ul>
+
+        <li><h2>Sponsors</h2>
+           
+                <a href="#" title="ads"><img src="http://www.everyoneowesme.com/wp-content/themes/spotonseo-red/images/125_125.gif" alt="ads" /></a>
+<a href="#" title="ads"><img src="http://www.everyoneowesme.com/wp-content/themes/spotonseo-red/images/125_125.gif" alt="ads" /></a>
+<a href="#" title="ads"><img src="http://www.everyoneowesme.com/wp-content/themes/spotonseo-red/images/125_125.gif" alt="ads" /></a>
+<a href="#" title="ads"><img src="http://www.everyoneowesme.com/wp-content/themes/spotonseo-red/images/125_125.gif" alt="ads" /></a>
+        </li>
+    </ul>
+</div>
+    </div>
+    <div class="clr"></div>
+
+</div>
+<div id="footer-outer">
+    <div id="footer">
+              <p><a href="http://www.everyoneowesme.com/" title="Everyone Owes Me">Everyone Owes Me</a>&copy; is powered by <a href="http://wordpress.org">WordPress</a>.<br />
+       Web Design by SpotOn <a href="http://www.spotonseoservices.com">Houston SEO Services</a>.</p>
+  </div>
+
+</div>
+</body>
+</html>
+
