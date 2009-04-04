@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(:version => 20090404172116) do
     t.string   "phone"
     t.string   "office_phone"
     t.string   "cell_phone"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

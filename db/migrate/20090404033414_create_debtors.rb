@@ -8,6 +8,7 @@ class CreateDebtors < ActiveRecord::Migration
       t.string   "phone"
       t.string   "office_phone"
       t.string   "cell_phone"
+      t.belongs_to "user"
       t.timestamps
     end
   end

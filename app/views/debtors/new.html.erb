@@ -1,0 +1,24 @@
+<h1>Who Owes You?</h1>
+
+<%= error_messages_for :debtor %>
+<% form_for :debtor, :url => debtors_path do |f| -%>
+  <p><%= label_tag 'email' %><br/>
+  <%= f.text_field :email %></p>
+  
+  <p><%= label_tag 'first_name' %><br/>
+  <%= f.text_field :first_name %></p>
+  
+  <p><%= label_tag 'last_name' %><br/>
+  <%= f.text_field :last_name %></p>
+  
+  <p><%= label_tag 'phone' %><br/>
+  <%= f.text_field :phone %></p>
+  
+  <p><%= label_tag 'office_phone' %><br/>
+  <%= f.text_field :office_phone %></p>
+  
+  <p><%= label_tag 'cell_phone' %><br/>
+  <%= f.text_field :cell_phone %></p>
+  
+  <p><%= submit_tag 'Submit' %></p>
+<% end -%>

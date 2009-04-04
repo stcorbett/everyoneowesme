@@ -1,0 +1,5 @@
+<h2>You Are Owed $ <%= current_user.total_owed %></h2>
+
+<%= render :partial =>'debtor', :collection => @debtors %>
+
+<%= link_to "Add a debtor", new_debtor_path %>
